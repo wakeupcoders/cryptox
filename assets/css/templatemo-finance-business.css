@@ -412,7 +412,8 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-    background-image: url(../images/slide_01.jpg);
+    background-image: url(https://t3.ftcdn.net/jpg/04/68/35/26/360_F_468352674_XFsZXwhCBrX85gtKYJfX4ZLhC0NrIXA9.jpg);
+    /* background-image: url(https://image.shutterstock.com/image-illustration/cryptocurrencies-top-5-by-market-260nw-2070237176.jpg); */
 }
 
 .Modern-Slider .item-2 .img-fill {
