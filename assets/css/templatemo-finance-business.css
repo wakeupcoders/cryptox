@@ -1171,6 +1171,39 @@ footer .contact-form button.filled-button:hover {
     color: #fff;
 }
 
+.page-heading-project {
+    text-align: center;
+    background-image: url(../ProjectImages/top.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 230px 0px 150px 0px;
+    color: #fff;
+}
+
+.linkColor {
+    color: #4bcd3e !important;
+}
+
+.chevron.right:before {
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.chevron::before {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.45em;
+    left: 0.15em;
+    position: relative;
+    top: 0.15em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.45em;
+}
+
 .page-heading h1 {
     text-transform: capitalize;
     font-size: 36px;
