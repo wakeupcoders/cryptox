@@ -682,7 +682,7 @@ ul.slick-dots {
 
 .fun-facts {
     margin-top: 140px;
-    background-image: url(../images/fun-facts-bg.jpg);
+    background-image: url(https://satt-token.com/blog/wp-content/uploads/2020/09/1267580.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1174,6 +1174,26 @@ footer .contact-form button.filled-button:hover {
 .page-heading-project {
     text-align: center;
     background-image: url(../ProjectImages/top.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 230px 0px 150px 0px;
+    color: #fff;
+}
+
+.page-heading-contact {
+    text-align: center;
+    background-image: url(https://blog.makerdao.com/wp-content/uploads/2018/12/wow101.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 230px 0px 150px 0px;
+    color: #fff;
+}
+
+.page-heading-about {
+    text-align: center;
+    background-image: url(../aboutImage/about-us.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
