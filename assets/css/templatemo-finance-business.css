@@ -6,8 +6,13 @@ https://templatemo.com/tm-545-finance-business
 
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+    font-family: "Roboto", sans-serif;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto';
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -319,8 +324,8 @@ header .navbar {
 
 .navbar .navbar-nav a.nav-link {
     text-transform: capitalize;
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 500;
     letter-spacing: 0.5px;
     color: #fff;
     transition: all 0.5s;
@@ -412,7 +417,9 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-    background-image: url(https://t3.ftcdn.net/jpg/04/68/35/26/360_F_468352674_XFsZXwhCBrX85gtKYJfX4ZLhC0NrIXA9.jpg);
+    background-image: url(../images/back.jpg);
+    /* background-image: url(https://c4.wallpaperflare.com/wallpaper/333/58/467/abstract-4k-digital-art-shapes-geometry-hd-wallpaper-preview.jpg); */
+    /* background-image: url(https://t3.ftcdn.net/jpg/04/68/35/26/360_F_468352674_XFsZXwhCBrX85gtKYJfX4ZLhC0NrIXA9.jpg); */
     /* background-image: url(https://image.shutterstock.com/image-illustration/cryptocurrencies-top-5-by-market-260nw-2070237176.jpg); */
 }
 
