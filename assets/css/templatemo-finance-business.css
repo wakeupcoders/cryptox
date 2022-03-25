@@ -1171,6 +1171,16 @@ footer .contact-form button.filled-button:hover {
     color: #fff;
 }
 
+.page-heading-services {
+    text-align: center;
+    background-image: url(https://www.vyopta.com/wp-content/uploads/2019/01/iStock-952039816.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 230px 0px 150px 0px;
+    color: #fff;
+}
+
 .page-heading-project {
     text-align: center;
     background-image: url(../ProjectImages/top.jpg);
