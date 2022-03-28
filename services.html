@@ -203,36 +203,35 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="contact-form" style="background-color: black;">
-                                                <form id="contact" action="" method="post">
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-12 col-sm-12">
-                                                            <p style="color: white;">Amount in USD ($)</p>
-                                                            <fieldset>
-                                                                <input name="name" type="number" class="form-control" id="name" placeholder="Amount To Invest" required value="500">
-                                                            </fieldset>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-12 col-sm-12">
-                                                            <p style="color: white;">Percentage (%)</p>
-                                                            <fieldset>
-                                                                <input name="email" type="number" class="form-control" id="email" pattern="[^ @]*@[^ @]*" min="1" placeholder="Return" value="20" required="">
-                                                            </fieldset>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-12 col-sm-12">
-                                                            <p style="color: white;">Duration in Months</p>
-                                                            <fieldset>
-                                                                <input name="subject" type="text" class="form-control" id="subject" placeholder="Duration" required value="12" readonly>
-                                                            </fieldset>
-                                                        </div>
-
-                                                        <div class="col-lg-12">
-                                                            <fieldset>
-                                                                <p style="color: white;">Maturity Amount: $ 10,000</p>
-                                                                <br>
-                                                                <button type="submit" id="form-submit" class="border-button">Calculte SIP</button>
-                                                            </fieldset>
-                                                        </div>
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                                        <p style="color: white;">Amount in USD ($)</p>
+                                                        <fieldset>
+                                                            <input name="name" type="number" class="form-control" id="samount" placeholder="Amount To Invest" required value="500">
+                                                        </fieldset>
                                                     </div>
-                                                </form>
+                                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                                        <p style="color: white;">Percentage (%)</p>
+                                                        <fieldset>
+                                                            <input name="email" type="number" class="form-control" id="email" pattern="[^ @]*@[^ @]*" min="1" placeholder="Return" value="11" readonly required="">
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                                        <p style="color: white;">Duration in Months</p>
+                                                        <fieldset>
+                                                            <input name="subject" type="text" class="form-control" id="subject" placeholder="Duration" required value="12" readonly>
+                                                        </fieldset>
+                                                    </div>
+
+                                                    <div class="col-lg-12">
+                                                        <fieldset>
+                                                            <p style="color: white;" id="sResult"></p>
+                                                            <br>
+                                                            <button type="submit" id="form-submit" class="border-button" onclick="CalcSIP()">Calculte SIP</button>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>

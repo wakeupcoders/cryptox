@@ -12,3 +12,17 @@ function CalcLumpsum() {
 
     document.getElementById('lResult').innerHTML = "Maturity Amount: $ " + result;
 }
+
+
+function CalcSIP() {
+
+    let amount = document.getElementById('samount').value;
+    let percentage = document.getElementById('lPercentage').value;
+    let months = document.getElementById('lMonths').value;
+
+
+    let result = parseInt(amount) * (parseInt(11) / 100);
+
+
+    document.getElementById('sResult').innerHTML = "Maturity Amount: $ " + result;
+}
