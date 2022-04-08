@@ -110,7 +110,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>Our Services</h1>
-                    <span>We are over 20 years of experience</span>
+                    <!-- <span>We are over 20 years of experience</span> -->
                 </div>
             </div>
         </div>
@@ -136,7 +136,7 @@
                             <img src="assets/images/investments.jpg" alt="">
                             <br> <br>
                             <h2><b>Investments</b></h2> <br>
-                            <p style="font-size: 20px;">Whether you know about cryptocurrency or do not know, No worries! We are here to help you choose investment plans that suits your temperament. You can calculate the expected returns easily on this page and take final decision.
+                            <p style="font-size: 20px;">Whether you know about cryptocurrency or do not know, No worries! We are here to help you choose investment plans that suits your temperament. You can calculate the expected returns easily on this page and decide.
 
                             </p>
                             <br><br>
@@ -157,20 +157,33 @@
                                             <div class="contact-form" style="background-color: black; ">
                                                 <div id="contact">
                                                     <div class="row">
-                                                        <div class="col-lg-4 col-md-12 col-sm-12">
-                                                            <p style="color: white;">Amount in USD ($)</p>
+                                                        <div class="col-lg-3 col-md-12 col-sm-12">
+                                                            <p style="color: white; font-size: 20px;">Select Currency</p>
+                                                            <fieldset>
+                                                                <select name="cars" id="currency" class="form-control">
+                                                                    <option value="USD">USD</option>
+                                                                    <option value="INR">INR</option>
+                                                                    <option value="EURO">EURO</option>
+                                                                    <option value="RUB">RUB</option>
+                                                                    <option value="YUAN">YUAN</option>
+                                                                    <option value="YEN">YEN</option>
+                                                                  </select>
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-12 col-sm-12">
+                                                            <p style="color: white; font-size: 20px;">Amount</p>
                                                             <fieldset>
                                                                 <input name="name" type="number" class="form-control" id="lAmount" placeholder="Amount To Invest" required value="500">
                                                             </fieldset>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-12 col-sm-12">
-                                                            <p style="color: white;">Percentage (%)</p>
+                                                        <div class="col-lg-3 col-md-12 col-sm-12">
+                                                            <p style="color: white; font-size: 20px;">Percentage (%)</p>
                                                             <fieldset>
-                                                                <input name="email" type="number" class="form-control" id="lPercentage" pattern="[^ @]*@[^ @]*" min="1" placeholder="Return" value="20" required="">
+                                                                <input name="email" type="number" class="form-control" id="lPercentage" pattern="[^ @]*@[^ @]*" min="1" placeholder="Return" readonly value="20" required="">
                                                             </fieldset>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-12 col-sm-12">
-                                                            <p style="color: white;">Duration in Months</p>
+                                                        <div class="col-lg-3 col-md-12 col-sm-12">
+                                                            <p style="color: white; font-size: 20px;">Duration (Months)</p>
                                                             <fieldset>
                                                                 <input name="subject" type="text" class="form-control" id="lMonths" placeholder="Duration" required value="12" readonly>
                                                             </fieldset>
@@ -178,9 +191,9 @@
 
                                                         <div class="col-lg-12">
                                                             <fieldset>
-                                                                <p style="color: white;" id="lResult"></p>
+                                                                <p style="color: white; font-size: 20px;" id="lResult"></p>
                                                                 <br>
-                                                                <button type="submit" id="form-submit" class="border-button" onclick="CalcLumpsum()">Calculte Lumpsum</button>
+                                                                <button type="submit" id="form-submit" class="border-button" onclick="CalcLumpsum()">Calculate</button>
                                                             </fieldset>
                                                         </div>
                                                     </div>
@@ -212,20 +225,33 @@
                                         <div class="col-md-12">
                                             <div class="contact-form" style="background-color: black;">
                                                 <div class="row">
-                                                    <div class="col-lg-4 col-md-12 col-sm-12">
-                                                        <p style="color: white;">Amount in USD ($)</p>
+                                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                                        <p style="color: white; font-size: 20px;">Select Currency</p>
+                                                        <fieldset>
+                                                            <select name="cars" id="SIPcurrency" class="form-control">
+                                                                <option value="USD">USD</option>
+                                                                <option value="INR">INR</option>
+                                                                <option value="EURO">EURO</option>
+                                                                <option value="RUB">RUB</option>
+                                                                <option value="YUAN">YUAN</option>
+                                                                <option value="YEN">YEN</option>
+                                                              </select>
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                                        <p style="color: white; font-size: 20px;">Amount in USD ($)</p>
                                                         <fieldset>
                                                             <input name="name" type="number" class="form-control" id="samount" placeholder="Amount To Invest" required value="500">
                                                         </fieldset>
                                                     </div>
-                                                    <div class="col-lg-4 col-md-12 col-sm-12">
-                                                        <p style="color: white;">Percentage (%)</p>
+                                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                                        <p style="color: white; font-size: 20px;">Percentage (%)</p>
                                                         <fieldset>
-                                                            <input name="email" type="number" class="form-control" id="email" pattern="[^ @]*@[^ @]*" min="1" placeholder="Return" value="11" readonly required="">
+                                                            <input name="email" type="number" class="form-control" id="email" pattern="[^ @]*@[^ @]*" min="1" placeholder="Return" value="9" readonly required="">
                                                         </fieldset>
                                                     </div>
-                                                    <div class="col-lg-4 col-md-12 col-sm-12">
-                                                        <p style="color: white;">Duration in Months</p>
+                                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                                        <p style="color: white; font-size: 20px;">Duration (Months)</p>
                                                         <fieldset>
                                                             <input name="subject" type="text" class="form-control" id="subject" placeholder="Duration" required value="12" readonly>
                                                         </fieldset>
@@ -233,9 +259,9 @@
 
                                                     <div class="col-lg-12">
                                                         <fieldset>
-                                                            <p style="color: white;" id="sResult"></p>
+                                                            <p style="color: white; font-size: 20px;" id="sResult"></p>
                                                             <br>
-                                                            <button type="submit" id="form-submit" class="border-button" onclick="CalcSIP()">Calculte SIP</button>
+                                                            <button type="submit" id="form-submit" class="border-button" onclick="CalcSIP()">Calculate</button>
                                                         </fieldset>
                                                     </div>
                                                 </div>
@@ -254,7 +280,7 @@
                             <h2><b>NFT</b></h2>
                             <hr>
 
-                            <p style="text-align: justify; font-size: 17px;">Non-Fungible Token (NFT) in simple word could be a digital art or video or an audio (for example songs) that has proof of authenticity and ownership which can be traded. Hey it’s not cryptocurrency but, an artist’s work stored
+                            <p style="text-align: justify; font-size: 20px;">Non-Fungible Token (NFT) in simple word could be a digital art or video or an audio (for example songs) that has proof of authenticity and ownership that can be traded. Hey it’s not cryptocurrency but, an artist’s work stored
                                 in digital format. Remember it may be copied and, criticise for energy consumptions. However, we can provide smart contract and traceability of original artist. Further, collectors (for us they are art lovers) identities
                                 are kept confidential and they may exchange NFTs while, original artisans getting paid for that particular exchange. There are digitised galleries available (we may help to create more) therefore, no need to approach expensive
                                 art galleries i.e., freedom to small artist entrepreneur.
@@ -269,7 +295,7 @@
                                             <div class="section-heading">
                                                 <h2>Unsung Artisans</h2>
                                                 <hr>
-                                                <p style="text-align: justify; font-size: 17px;">A non-fungible token (NFT) is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger, that can be sold and traded.[1] Types of NFT data units may be associated with digital files
+                                                <p style="text-align: justify; font-size: 20px;">A non-fungible token (NFT) is a non-interchangeable unit of data stored on a blockchain, a form of digital ledger, that can be sold and traded. Types of NFT data units may be associated with digital files
                                                     such as photos, videos, and audio. Because each token is uniquely identifiable, NFTs differ from blockchain cryptocurrencies, such as Bitcoin. Let's <a href="#contactnow">connect</a> together to learn
                                                     more.
                                                 </p>
@@ -309,7 +335,7 @@
                                             <div class="section-heading">
                                                 <h2>Music World</h2>
                                                 <hr>
-                                                <p style="text-align: justify; font-size: 17px;">The art of producing pleasing or expressive combinations of tones especially with melody, rhythm, and usually harmony. Let's <a href="#contactnow">connect</a> together to learn more.
+                                                <p style="text-align: justify; font-size: 20px;">The art of producing pleasing or expressive combinations of tones especially with melody, rhythm, and usually harmony. Let's <a href="#contactnow">connect</a> together to learn more.
 
                                                 </p>
                                             </div>
@@ -343,7 +369,7 @@
                                             <div class="section-heading">
                                                 <h2>Digital Art</h2>
                                                 <hr>
-                                                <p style="text-align: justify; font-size: 17px;">Digital art is an artistic work or practice that uses digital technology as part of the creative or presentation process. Since the 1960s, various names have been used to describe the process, including
+                                                <p style="text-align: justify; font-size: 20px;">Digital art is an artistic work or practice that uses digital technology as part of the creative or presentation process. Since the 1960s, various names have been used to describe the process, including
                                                     computer art and multimedia art. Digital art is itself placed under the larger umbrella term new media art. Let's <a href="#contactnow">connect</a> together to learn more.
 
                                                 </p>
@@ -378,7 +404,7 @@
                                             <div class="section-heading">
                                                 <h2>AI Genereative Art</h2>
                                                 <hr>
-                                                <p style="text-align: justify; font-size: 17px;">Artificial intelligence Art refers to any artwork created through the use of artificial intelligence. To create AI art, artists write algorithms not to follow a set of rules, but to “learn” a specific aesthetic
+                                                <p style="text-align: justify; font-size: 20px;">Artificial intelligence Art refers to any artwork created through the use of artificial intelligence. To create AI art, artists write algorithms not to follow a set of rules, but to “learn” a specific aesthetic
                                                     by analyzing thousands of images. The algorithms then tries to imitate these inputs, producing a range of output images. Let's <a href="#contactnow">connect</a> together to learn more.
 
                                                 </p>
@@ -409,12 +435,16 @@
                         </article>
                         <article id='tabs-3'>
                             <!-- https://d3tj4wnms16o5e.cloudfront.net/s3fs-public/inline-images/Image-Asset-Management_0.jpg -->
+<<<<<<< HEAD
+                            <img src="./assets/images/OSI2.png" alt="" height="310" width="900">
+=======
                             <img src="assets/images/images/Digital Assests/main/1.jpg" alt="" height=400" width="900">
+>>>>>>> f7deb897ee0ceaa145c388c7eb250a9f3a066a03
                             <br>
                             <br>
                             <h2 style="font-size: 36px;font-weight: 600;">Digital Assets</h2>
                             <hr>
-                            <p style="text-align: justify; font-size: 23px;">They are also digital formats of a document or audio or movie or virtual landscape etc. but, with a right to use exclusively as an owner.
+                            <p style="text-align: justify; font-size: 20px;">They are also digital formats of a document or audio or movie or virtual landscape etc. but, with a right to use exclusively as an owner.
 
                             </p>
                             <h4>We can offer you three types as of now.
@@ -422,6 +452,7 @@
                             <i class=" fa fa-arrow-right " aria-hidden="true "></i> <b>Digital Real </b><br>
                             <i class=" fa fa-arrow-right " aria-hidden="true "></i> <b> Estate Digital </b><br>
                             <i class=" fa fa-arrow-right " aria-hidden="true "></i> <b>Gold Digital Stock </b><br>
+                            <i class=" fa fa-arrow-right " aria-hidden="true "></i> <b>Lost & Found </b><br>
 
 
 
@@ -438,7 +469,7 @@
                                                             <h2>Digital Real Estate</h2>
                                                             <hr>
                                                             <p style="text-align: justify;  font-size: 20px;">Now you can own virtual lands, buildings that you can rent out, organise events and sell or buy like you did in real world (real estate). It throws similar type of profit generation opportunities
-                                                                as in the real world but, with high-risk high returns rider.
+                                                                as in the real world but, with high-risk high returns rider. <a href="#contactnow">Contact us for more.</a>
                                                             </p>
 
                                                         </div>
@@ -467,7 +498,7 @@
                                                             <hr>
                                                             <p style="text-align: justify; font-size: 20px;">Right now, you keep gold in safe or with bank. You remain concerned about its security at home and pay in case you have kept gold with bank. You do not need locker or secure place to store gold
                                                                 we can help you to buy gold in digital format stored in secured vault that you may sell or buy more. Isn’t it more secure?
-
+                                                                <a href="#contactnow">Contact us for more.</a>
                                                             </p>
 
                                                         </div>
@@ -495,7 +526,7 @@
                                                             <h2>Digital Stock</h2>
                                                             <hr>
                                                             <p style="text-align: justify;  font-size: 20px;">You can buy any leading company’s stocks in digital formats while sitting at home and trade. There are stocks with individual share with high pricing that you may not be able to buy. However,
-                                                                with digital world you may get part of it and start trading the same.
+                                                                with digital world you may get part of it and start trading the same.<a href="#contactnow">Contact us for more.</a>
 
 
                                                             </p>
@@ -513,6 +544,38 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="more-info about-info">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="more-info-content">
+                                                <div class="row">
+                                                    <div class="col-md-6 align-self-center">
+                                                        <div class="right-content">
+
+                                                            <h2>Lost & Found</h2>
+                                                            <hr>
+                                                            <p style="text-align: justify;  font-size: 20px;">
+                                                                We can help you to trace your lost coins. There are people who have lost their hard-earned money invested in bitcoin and/or altcoins and now are not able to trace them. There is a rider it may not be always possible due to the nature of blockchain. Thus,
+                                                                to trace every coin therefore this service is based on successful tracing (stage 1) followed by extraction (stage 2).<a href="#contactnow">Contact us for more.</a>
+
+
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="left-image"><br><br>
+                                                            <img src="./assets/images/OSI3.png" alt=""><br><br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </article>
                         <article id='tabs-4'>
                             <img src="assets/images/images/mataverse/main/metaverse.jpg" alt="" width="900">
@@ -520,11 +583,8 @@
                             <h2><b>Metaverse</b></h2><br>
                             <p style="text-align: justify; font-size: 20px;">Now you can conduct meetings, work, play and socialise in three dimensional augmented yet virtual reality. These places are already being used for organising events and concerts. We can help to create conference or meeting
                                 places thereby saving lots of time spent on travelling, boarding and lodging. It will provide almost physical three-dimensional environment.
-                                <br>We can help you in the organize of such events. </p>
-                            <p style="text-align: justify; font-size: 20px;"><br> We are there to help you, to organize a meeting <a href="#contactnow">lets discuss</a> It's the time for a get-together with your buddies <a href="#contactnow">lets plan</a> Let the world see the real talent to organzie
-                                a music concert <a>lets promote</a> Organzize your companys' keynote with a fraction of cost <a href="#contactnow">let's execute</a> Your imagination <a href="#contactnow">Give us a chance</a>
+                                <br><br>We can help you in the organize of such events. <a href="#contactnow">Contact us for more.</a></p>
 
-                            </p>
                             <div>
 
 
@@ -555,6 +615,10 @@
                                                     </div> -->
                                                 </div>
                                             </div>
+
+
+                                            <p style="font-size: 20px; text-align: center;">We are here to help you to organise a meeting <a href="#contactnow">lets discuss</a>.
+                                            </p>
 
                                         </div>
                                     </div>
@@ -588,6 +652,9 @@
                                                 </div>
                                             </div>
 
+                                            <p style="font-size: 20px; text-align: center;">Showcase real talent through a music concert <a href="#contactnow">lets plan</a>.
+                                            </p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -618,6 +685,9 @@
                                                     </div> -->
                                                 </div>
                                             </div>
+
+                                            <p style="font-size: 20px; text-align: center;">It’s time for a get-together with your buddies <a href="#contactnow">lets plan</a>.
+                                            </p>
 
                                         </div>
                                     </div>
@@ -693,7 +763,15 @@
 
                                 </div>
                             </div>
-                            <div class="container "><br><br> <br>
+                            <div class="container "><br><br>
+                                <h4>How these assets are different from traditional gaming?
+                                </h4>
+                                <p style="text-align: justify; font-size: 20px; ">
+                                    Well !! you are the sole owner, can trade these assets in fiat cash. In case you want to avoid NFTs exchange processes, we are here to help you.
+
+                                    <a href="#contactnow">reach us.</a>
+                                </p><br>
+
                                 <div class="row ">
                                     <div class="col-md-12 ">
                                     </div>
@@ -710,15 +788,10 @@
 
                                         </div>
                                     </div>
-                                </div>
-                                <br><br>
-                                <h4>How are they different you say?</h4>
+                                </div><br>
                                 <p style="text-align: justify; font-size: 20px; ">
-                                    They give control back to the user, You are the sole owner of the assests and you can trade back to fiat cash which is not possible in traditional gaming You don't want to getting into the NFTs, exchanges fuss, we are here to help you
-                                    <a href="#contactnow">reach out to us.</a>
-                                </p><br>
-                                <p style="text-align: justify; font-size: 20px; ">
-                                    We are our building the first blockchain based E sports team. If you to become part of that then just <a href="contact.html ">contact us</a>. </p>
+                                    We have initiated a project on blockchain based E sports team. If you wish to join us,
+                                    <a href="contact.html ">contact us</a>. </p>
 
                             </div>
 
@@ -745,6 +818,8 @@
                                             </div>
                                         </div>
                                     </div>
+
+
                                 </div>
                             </div>
                             <br>
@@ -756,65 +831,128 @@
                             <br><br>
                             <h2 style="font-size: 36px;font-weight: 600;">Build The Future</h2><br>
                             <div class="container ">
-                                <p style="text-align: justify; font-size: 17px; ">
-                                    Launching your own token, we can help you out. Our professional services we may help you to plan and execute blockchain related work for example; you want to create your own collections or stocks etc. </p>
+                                <p style="text-align: justify; font-size: 20px; ">
+                                    Launching your own token, we can help you out. Our professional services may help you to plan and execute blockchain related work for example; you want to create your own collections or stocks etc. </p>
 
-                                <p style="text-align: justify; font-size: 17px; ">Remember! It’s a new world where people around the world will help you out and not few professionals charging hefty amount.
+                                <p style="text-align: justify; font-size: 20px; ">Remember! It’s a new world where people around the world will help you out and not few professionals charging hefty amount.
                                 </p>
 
-                                <div class=" "><br>
-                                    <div class="container ">
-                                        <div class="row ">
-                                            <div class="col-md-12 ">
-                                                <div class="section-heading ">
-                                                    <h2>Coin/Token</h2>
-                                                    <hr>
-                                                    <img src="./assets/images/Build Future/Coin-token_out.jpg" alt=" "><br><br>
+                                <div class="more-info about-info">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="more-info-content">
+                                                    <div class="row">
 
-                                                    <p style="text-align: justify; font-size: 17px; ">
-                                                        This is the best option for both individuals and enterprises. We can help your idea into the world of crypto by building your own token on existing blockchain like ETH, BSC, etc. <a href="#contactnow ">Lets make it happen</a>
-                                                    </p>
+                                                        <div class="col-md-6 align-self-center">
+                                                            <div class="right-content">
+
+                                                                <h2>Coin/Token</h2>
+                                                                <hr>
+                                                                <p style="text-align: justify;  font-size: 20px;">
+                                                                    This is the best option for both individuals and enterprises. We may help you refining and execution of your concept in the world of crypto to launch a new token like ETH,BSC etc.<a href="#contactnow ">Lets make it happen</a>
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="left-image">
+                                                                <img src="./assets/images/Build Future/Coin-token_out.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more-info about-info">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="more-info-content">
+                                                    <div class="row">
 
+                                                        <div class="col-md-6 align-self-center">
+                                                            <div class="right-content">
+
+                                                                <h2>Blockchain</h2>
+                                                                <hr>
+                                                                <p style="text-align: justify;  font-size: 20px;"> Creation of a blockchain. It could be a private blockchain for your company’s supply chain and/ or distribution network. You can also go with public blockchain by launching an efficient system
+                                                                    for the world through public blockchain.
+                                                                    <a href="#contactnow ">Drop us a message</a>
+
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="left-image">
+                                                                <img src="./assets/images/Build Future/Blockchain_out.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more-info about-info">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="more-info-content">
+                                                    <div class="row">
+
+                                                        <div class="col-md-6 align-self-center">
+                                                            <div class="right-content">
+
+                                                                <h2>Dapp</h2>
+                                                                <hr>
+                                                                <p style="text-align: justify;  font-size: 20px;"> Decentralized App, basically an application with the added layer of blockchain Have an idea? Lets make it happen <a href="#contactnow ">Lets discuss together.</a>
+
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="left-image">
+                                                                <img src="./assets/images/Build Future/dappradar_out.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class=" "><br>
-                                    <div class="container ">
-                                        <div class="row ">
-                                            <div class="col-md-12 ">
-                                                <div class="section-heading ">
-                                                    <h2>Blockchain</h2>
-                                                    <hr>
-                                                    <img src="./assets/images/Build Future/Blockchain_out.jpg" alt=" "><br><br>
+                                <div class="more-info about-info">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="more-info-content">
+                                                    <div class="row">
 
-                                                    <p style="text-align: justify; font-size: 17px;
-                                ">
-                                                        Creation of a blockchain. It can be with in private blockchain ex. your companys' distribution or collection system and/or public blockchain to develop and launch your idea to the world <a href="#contactnow ">Drop us a message</a>
-                                                    </p>
+                                                        <div class="col-md-6 align-self-center">
+                                                            <div class="right-content">
+
+                                                                <h2>Smart Contract</h2>
+                                                                <hr>
+                                                                <p style="text-align: justify;  font-size: 20px;"> It is a kind of self-executed business automation that removes administrative overhead. In simple language, computer execute the transaction and allows shipment of goods or service once it
+                                                                    is able to confirm with pre-defined conditions automatically.
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="left-image">
+                                                                <img src="./assets/images/OSI4.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" "><br>
-                                    <div class="container ">
-                                        <div class="row ">
-                                            <div class="col-md-12 ">
-                                                <div class="section-heading ">
-                                                    <h2>Dapp</h2>
-                                                    <hr>
-                                                    <img src="./assets/images/Build Future/dappradar_out.jpg" alt=" "><br><br>
-
-                                                    <p style="text-align: justify; font-size: 17px; ">
-                                                        Decentralized app. basically an application with the added layer of blockchain Have an idea? Lets make it happen <a href="#contactnow ">Lets discuss together.</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
